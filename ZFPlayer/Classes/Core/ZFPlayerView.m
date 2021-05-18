@@ -74,11 +74,16 @@
         playerViewSize = CGSizeMake(width, height);
     }
     
-    if (self.scalingMode == ZFPlayerScalingModeNone || self.scalingMode == ZFPlayerScalingModeAspectFit) {
+    if (self.scalingMode == ZFPlayerScalingModeNone || self.scalingMode == ZFPlayerScalingModeAspectFit || self.scalingMode == ZFPlayerScalingModeShiftUp) {
         min_w = playerViewSize.width;
         min_h = playerViewSize.height;
         min_x = (min_view_w - min_w) / 2.0;
         min_y = (min_view_h - min_h) / 2.0;
+        if (min_w >= min_h) {
+            if (self.scalingMode == ZFPlayerScalingModeShiftUp) {
+                min_y -= 100;
+            }
+        }
         self.playerView.frame = CGRectMake(min_x, min_y, min_w, min_h);
     } else if (self.scalingMode == ZFPlayerScalingModeAspectFill || self.scalingMode == ZFPlayerScalingModeFill) {
         self.playerView.frame = self.bounds;
