@@ -42,7 +42,8 @@ typedef NS_ENUM(NSInteger, ZFPlayerScalingMode) {
     ZFPlayerScalingModeNone,       // No scaling.
     ZFPlayerScalingModeAspectFit,  // Uniform scale until one dimension fits.
     ZFPlayerScalingModeAspectFill, // Uniform scale until the movie fills the visible bounds. One dimension may have clipped contents.
-    ZFPlayerScalingModeFill        // Non-uniform scale. Both render dimensions will exactly match the visible bounds.
+    ZFPlayerScalingModeFill,       // Non-uniform scale. Both render dimensions will exactly match the visible bounds.
+    ZFPlayerScalingModeShiftUp.    // 
 };
 
 /**
