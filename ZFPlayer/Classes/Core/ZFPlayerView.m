@@ -81,7 +81,7 @@
         min_y = (min_view_h - min_h) / 2.0;
         if (min_w >= min_h) {
             if (self.scalingMode == ZFPlayerScalingModeShiftUp) {
-                min_y -= 100;
+                min_y -= 120;
             }
         }
         self.playerView.frame = CGRectMake(min_x, min_y, min_w, min_h);
