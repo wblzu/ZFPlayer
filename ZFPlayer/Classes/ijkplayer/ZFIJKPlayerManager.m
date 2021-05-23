@@ -169,6 +169,8 @@
     }
 
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:self.assetURL withOptions:self.options];
+//    self.player.view.backgroundColor = [UIColor redColor];
+    self.player.view.backgroundColor = [UIColor blackColor];
     self.player.shouldAutoplay = self.shouldAutoPlay;
     [self.player prepareToPlay];
     self.view.playerView = self.player.view;
