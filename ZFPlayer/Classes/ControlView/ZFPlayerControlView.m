@@ -279,7 +279,7 @@
 
 /// 设置标题、封面、全屏模式
 - (void)showTitle:(NSString *)title coverURLString:(NSString *)coverUrl fullScreenMode:(ZFFullScreenMode)fullScreenMode {
-    UIImage *placeholder = [ZFUtilities imageWithColor:[UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1] size:self.bgImgView.bounds.size];
+    UIImage *placeholder = [ZFUtilities imageWithColor:[UIColor colorWithWhite:0 alpha:0.2] size:self.bgImgView.bounds.size];
     [self showTitle:title coverURLString:coverUrl placeholderImage:placeholder fullScreenMode:fullScreenMode];
 }
 
