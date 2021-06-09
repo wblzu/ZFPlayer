@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
         ttSDK.source_files = 'ZFPlayer/Classes/TTSDK/*.{h,m}'
         ttSDK.public_header_files = 'ZFPlayer/Classes/TTSDK/*.h'
         ttSDK.dependency 'ZFPlayer/Core'
-        ttSDK.dependency 'TTSDK/player'
+        ttSDK.dependency 'TTSDK'
     end
     
 end
