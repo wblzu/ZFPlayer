@@ -46,11 +46,11 @@ Pod::Spec.new do |s|
         ijkplayer.dependency 'IJKMediaFramework'
     end
     
-    s.subspec 'TTSDK' do |TTSDK|
-        ijkplayer.source_files = 'ZFPlayer/Classes/TTSDK/*.{h,m}'
-        ijkplayer.public_header_files = 'ZFPlayer/Classes/TTSDK/*.h'
-        ijkplayer.dependency 'ZFPlayer/Core'
-        ijkplayer.dependency 'TTSDK/player'
+    s.subspec 'TTSDK' do |ttSDK|
+        ttSDK.source_files = 'ZFPlayer/Classes/TTSDK/*.{h,m}'
+        ttSDK.public_header_files = 'ZFPlayer/Classes/TTSDK/*.h'
+        ttSDK.dependency 'ZFPlayer/Core'
+        ttSDK.dependency 'TTSDK/player'
     end
     
 end
